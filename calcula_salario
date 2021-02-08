@@ -1,0 +1,60 @@
+<meta charset = "UTF-8">
+
+<h1>Calculadora de salário mais comissão</h1>
+
+<input type="text" id="num1"; /> Valor do salário 
+<br>
+<br>
+<input type="text" id="num2"; /> Quantidade de vendas 
+<br>
+<br>
+<button>Calcular</button>
+<br>
+<br>
+Considera-se o valor da comissão sendo R$1,00 por vida 
+
+
+<script>
+
+function pulaLinha(){
+	
+	document.write("<br>");
+	document.write("<br>");
+
+}
+
+function mostra(frase){
+
+	document.write(frase);
+	pulaLinha();
+
+}
+
+//defini essas variáveis antes da função pegando pelo id do input
+//var num1 = Number(document.getElementById("num1").value);
+//var num2 = Number(document.getElementById("num2").value);
+
+function calcular(){
+ 	
+ 	var inputNum1 = parseInt(document.getElementById("num1").value);
+	var inputNum2 = parseInt(document.getElementById("num2").value);
+	var salarioTotal = inputNum1 + inputNum2;
+	
+	mostra(salarioTotal);
+		
+}
+
+
+var button = document.querySelector("button");
+button.onclick = calcular;
+//mostrar o resultado num alerta? 
+//usar onclick
+
+//usuário insere o salário base e comissao, sendo a comissão um real "por vida", desejo que a página me retorne o total
+
+
+
+
+
+
+</script>
